@@ -8,7 +8,7 @@ from .models import Question, Choice
 # Create your views here.
 
 class IndexView(generic.ListView):
-    tempate_name = 'polls/index.html'
+    template_name = 'polls/index.html'
     context_object_name = 'latest_question_list'
 
     def get_queryset(self):
